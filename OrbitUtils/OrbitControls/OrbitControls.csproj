@@ -34,7 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
@@ -43,14 +42,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserControl1.cs">
+    <Compile Include="OrbitAgenda\AbstractRenderer.cs" />
+    <Compile Include="OrbitAgenda\Appointment.cs" />
+    <Compile Include="OrbitAgenda\AppointmentEventArgs.cs" />
+    <Compile Include="OrbitAgenda\DrawTool.cs" />
+    <Compile Include="OrbitAgenda\ITool.cs" />
+    <Compile Include="OrbitAgenda\NewAppointmentEvent.cs" />
+    <Compile Include="OrbitAgenda\Office12Renderer.cs" />
+    <Compile Include="OrbitAgenda\OrbitAgenda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrbitAgenda\ResolveAppointmentsEvent.cs" />
+    <Compile Include="OrbitAgenda\Selection.cs" />
+    <Compile Include="OrbitAgenda\SelectionTool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucAgenda.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="ucAgenda.Designer.cs">
+      <DependentUpon>ucAgenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ucAgenda.resx">
+      <DependentUpon>ucAgenda.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
