@@ -29,36 +29,37 @@
         private void InitializeComponent()
         {
             OrbitControls.OrbitAgenda.DrawTool drawTool1 = new OrbitControls.OrbitAgenda.DrawTool();
-            this.orbitAgenda1 = new OrbitControls.OrbitAgenda.OrbitAgenda();
+            this.orbitAgenda = new OrbitControls.OrbitAgenda.OrbitAgenda();
             this.SuspendLayout();
             // 
-            // orbitAgenda1
+            // orbitAgenda
             // 
-            drawTool1.OrbitAgenda = this.orbitAgenda1;
-            this.orbitAgenda1.ActiveTool = drawTool1;
-            this.orbitAgenda1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.orbitAgenda1.Location = new System.Drawing.Point(0, 4);
-            this.orbitAgenda1.Name = "orbitAgenda1";
-            this.orbitAgenda1.SelectionEnd = new System.DateTime(((long)(0)));
-            this.orbitAgenda1.SelectionStart = new System.DateTime(((long)(0)));
-            this.orbitAgenda1.Size = new System.Drawing.Size(904, 547);
-            this.orbitAgenda1.StartDate = new System.DateTime(((long)(0)));
-            this.orbitAgenda1.TabIndex = 0;
-            this.orbitAgenda1.Text = "orbitAgenda1";
+            drawTool1.OrbitAgenda = this.orbitAgenda;
+            this.orbitAgenda.ActiveTool = drawTool1;
+            this.orbitAgenda.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.orbitAgenda.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.orbitAgenda.Location = new System.Drawing.Point(0, 0);
+            this.orbitAgenda.Name = "orbitAgenda";
+            this.orbitAgenda.SelectionEnd = new System.DateTime(((long)(0)));
+            this.orbitAgenda.SelectionStart = new System.DateTime(((long)(0)));
+            this.orbitAgenda.Size = new System.Drawing.Size(930, 560);
+            this.orbitAgenda.StartDate = new System.DateTime(((long)(0)));
+            this.orbitAgenda.TabIndex = 0;
+            this.orbitAgenda.Text = "orbitAgenda";
             // 
             // ucAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.orbitAgenda1);
+            this.Controls.Add(this.orbitAgenda);
             this.Name = "ucAgenda";
-            this.Size = new System.Drawing.Size(907, 554);
+            this.Size = new System.Drawing.Size(930, 560);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private OrbitAgenda.OrbitAgenda orbitAgenda1;
+        private OrbitAgenda.OrbitAgenda orbitAgenda;
     }
 }

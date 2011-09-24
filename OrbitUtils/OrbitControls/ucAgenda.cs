@@ -15,6 +15,10 @@ namespace OrbitControls
         public ucAgenda()
         {
             InitializeComponent();
+
+            orbitAgenda.DaysToShow = 7;
+            orbitAgenda.StartDate = DateTime.Now;
+            orbitAgenda.StartHour = 8;
         }
     }
 }
