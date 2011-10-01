@@ -36,6 +36,7 @@
             // 
             drawTool1.OrbitAgenda = this.orbitAgenda;
             this.orbitAgenda.ActiveTool = drawTool1;
+            this.orbitAgenda.AllowScroll = false;
             this.orbitAgenda.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.orbitAgenda.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.orbitAgenda.Location = new System.Drawing.Point(0, 0);
@@ -46,6 +47,8 @@
             this.orbitAgenda.StartDate = new System.DateTime(((long)(0)));
             this.orbitAgenda.TabIndex = 0;
             this.orbitAgenda.Text = "orbitAgenda";
+            this.orbitAgenda.SelectionChanged += new System.EventHandler(this.orbitAgenda_SelectionChanged);
+            this.orbitAgenda.ResolveAppointments += new OrbitControls.OrbitAgenda.ResolveAppointmentsEventHandler(this.orbitAgenda_ResolveAppointments);
             // 
             // ucAgenda
             // 
