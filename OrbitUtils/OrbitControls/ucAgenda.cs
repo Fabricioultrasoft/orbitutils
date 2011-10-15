@@ -77,7 +77,14 @@ namespace OrbitControls
 
         public int getIDAppointment()
         {
-            return orbitAgenda.SelectedAppointment.IdAppointment;
+            int id = 0;
+
+            if (orbitAgenda.SelectedAppointment != null)
+            {
+                id = orbitAgenda.SelectedAppointment.IdAppointment;
+            }
+
+            return id;
         }
 
     }
