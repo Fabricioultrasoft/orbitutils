@@ -33,6 +33,9 @@ namespace OrbitControls.OrbitAgenda
         {
         }
 
+        private int m_idAppointment;
+        public int IdAppointment { get{return m_idAppointment;} set{m_idAppointment = value;} }
+
         private DateTime m_EndDate;
 
         public DateTime EndDate

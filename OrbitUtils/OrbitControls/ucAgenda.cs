@@ -50,6 +50,7 @@ namespace OrbitControls
                 app.EndDate = DateTime.Parse(dr["data"].ToString()) + ts;
                 app.BorderColor = Color.Black;
                 app.Title = dr["nome"].ToString();
+                app.IdAppointment = int.Parse(dr["id"].ToString());
 
                 listAppointments.Add(app);
 
@@ -72,7 +73,11 @@ namespace OrbitControls
 
         private void orbitAgenda_SelectionChanged(object sender, EventArgs e)
         {
+        }
 
+        public int getIDAppointment()
+        {
+            return orbitAgenda.SelectedAppointment.IdAppointment;
         }
 
     }
