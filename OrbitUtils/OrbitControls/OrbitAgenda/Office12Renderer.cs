@@ -189,8 +189,8 @@ namespace OrbitControls.OrbitAgenda
             if ((appointment.Locked))
             {
                 // Draw back
-                using (Brush m_Brush = new System.Drawing.Drawing2D.HatchBrush(System.Drawing.Drawing2D.HatchStyle.LargeConfetti, Color.Blue, appointment.Color))
-                    g.FillRectangle(m_Brush, rect);
+                //using (Brush m_Brush = new System.Drawing.Drawing2D.HatchBrush(System.Drawing.Drawing2D.HatchStyle.LargeConfetti, Color.Blue, appointment.Color))
+                //    g.FillRectangle(m_Brush, rect);
 
                 // little transparent
                 start = Color.FromArgb(230, start);

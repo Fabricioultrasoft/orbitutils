@@ -51,6 +51,7 @@ namespace OrbitControls
                 app.BorderColor = Color.Black;
                 app.Title = dr["nome"].ToString();
                 app.IdAppointment = int.Parse(dr["id"].ToString());
+                app.Locked = true;
 
                 listAppointments.Add(app);
 
